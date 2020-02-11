@@ -2496,7 +2496,7 @@ tbody.collapse.in {
 }
 @media (min-width: 992px) {
     .dropdown > .collapse.in { display: inline-table; }
-    .open > .dropdown-menu { display: inline-table; float: right; margin: 2px auto 0 !important; white-space: nowrap; width: auto; }
+    .open > .dropdown-menu { display: flex; float: right; margin: 2px auto 0 !important; white-space: nowrap; width: auto; }
     .dropdown-menu { display: none;}
     .dropdown > .dropdown-menu { float: right; margin: 2px auto 0 !important; white-space: nowrap; width: auto; }
 }

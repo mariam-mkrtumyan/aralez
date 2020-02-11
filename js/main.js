@@ -255,7 +255,7 @@ $(document).ready(function () {
     });
     $("#owl-demo-background").owlCarousel({
         transitionStyle: "fade",
-        autoPlay: 3000,
+        autoPlay: 5000,
         slideSpeed: 100,
         singleItem: true,
         navigation: false,
@@ -1845,3 +1845,20 @@ $(document).ready(function () {
         }
     });
 });
+
+
+            function playMute(){
+
+ document.getElementById('background_audio').play();
+                var myButtonClasses = document.getElementById("playMute").classList;
+
+              if(document.getElementById('background_audio').muted == true){
+                 myButtonClasses.remove("mute");
+                document.getElementById('background_audio').muted = false;
+
+              } else {
+                myButtonClasses.add("mute");
+                document.getElementById('background_audio').muted = true;
+              }
+
+            }

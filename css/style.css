@@ -106,7 +106,7 @@ ul, ol, dl {list-style-position: outside;}
 ====================================== */
 
 /* font family */
-.alt-font {font-family: 'Great Vibes', cursive !important; text-transform: inherit !important;}
+.alt-font {font-family: 'GHEAD Diana', cursive !important; text-transform: inherit !important;}
 .main-font {font-family: 'Open Sans', sans-serif !important;}
 
 /* heading */
@@ -116,7 +116,7 @@ h2 { font-size:23px; font-weight:400; letter-spacing:inherit; line-height: 30px}
 h3 { font-size:14px; letter-spacing:inherit; font-weight:700; }
 h4 { letter-spacing: 0px; font-weight:400; text-transform:none; font-size:16px; line-height: 26px}
 h5 { letter-spacing: 2px; font-weight:600; font-size:11px}
-h6 { font-family: 'Great Vibes', cursive; letter-spacing: 1px; font-size: 13px; font-weight: 400; line-height: 20px; text-transform: inherit;}
+h6 { font-family: 'GHEAD Diana', cursive; letter-spacing: 1px; font-size: 13px; font-weight: 400; line-height: 20px; text-transform: inherit;}
 
 
 .subheader h6{ text-transform: none !important; font-size: 28px; line-height: 35px}
@@ -429,7 +429,6 @@ p.uppercase a:hover { text-decoration: none;}
 }
 
 .aralez-banner-bg-home {
-        max-width: 500px;
     margin: 0 auto;
 }
 
@@ -2359,3 +2358,92 @@ thead th.first { padding-left: 0 !important; }
 .production-block .right-content {padding:60px;}
 .production-block .right-content ul li { font-size: 13px; padding: 10px 0;  }
 .production-block .right-content ul li span {width:55px; display: inline-block;}
+
+
+
+.bg-music-btn {
+    font-weight: bold;
+    height: auto;
+    padding: 3px;
+    position: fixed;
+    left: 12px;
+    text-align: center;
+    text-decoration: none;
+    bottom: 12px;
+    width: auto;
+    background-color: #000;
+    z-index: 555;
+    border-radius: 2px;
+}
+
+
+.speaker {
+  height: 20px;
+  width: 27px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.speaker span.music-icon {
+        display: block;
+    width: 5px;
+    height: 6px;
+    background: #fff;
+    margin: 10px 0 0 3px;
+}
+.speaker span.music-icon:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    border-width: 7px 10px 7px 16px;
+    left: -13px;
+    top: 6px;
+}
+.speaker span.music-icon:before {
+     transform: rotate(45deg);
+    border-radius: 0 50px 0 0;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-style: double;
+    border-color: #fff;
+    border-width: 5px 5px 0 0;
+    left: 15px;
+    top: 8px;
+    transition: all 0.2s ease-out;
+}
+
+.speaker.mute span.music-icon:before {
+  transform: scale(0.5) translate(-15px, 0) rotate(36deg);
+  opacity: 0;
+}
+
+
+.mute span.mute-icon {
+  position: absolute;
+  top: 8px;
+  width: 11px;
+  height: 11px;
+}
+.mute span.mute-icon:hover {
+  opacity: 1;
+}
+.mute span.mute-icon:before, .mute span.mute-icon:after {
+  position: absolute;
+  left: 6px;
+  content: ' ';
+  height: 10px;
+  width: 2px;
+  background-color: #fff;
+}
+.mute span.mute-icon:before {
+  transform: rotate(45deg);
+}
+.mute span.mute-icon:after {
+  transform: rotate(-45deg);
+}
+
